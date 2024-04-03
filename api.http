@@ -1,0 +1,13 @@
+### newMessage 
+POST http://localhost:4000/mail/message
+Content-Type: application/json
+
+{ 
+    "nombre": "nombre",
+    "apellido": "apellido",
+    "email": "email@example.com",
+    "profesion": "profesion",
+    "empresa": "empresa",
+    "pais": "pais"
+}
+
