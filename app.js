@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import router from './src/router/message.router.js';
-import { corseMiddleware } from './src/cors/middleware.js'
+import { corsMiddleware } from './src/cors/middleware.js'
 
 export const createApp = () =>{
 
@@ -12,7 +12,7 @@ export const createApp = () =>{
 
     app.use(bodyParser.json())
     
-    app.use(corseMiddleware);
+    app.use(corsMiddleware);
 
     app.use('/mail', router)
     
