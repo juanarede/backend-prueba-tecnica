@@ -1,5 +1,6 @@
 import { createApp } from "./app.js";
 
+const app = createApp()
 
 
-createApp();
+export default app
