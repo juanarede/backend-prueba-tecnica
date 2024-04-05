@@ -9,16 +9,16 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
-model Form{
-  id Int @id @default(autoincrement())
-  nombre String
-  apellido String
-  email String
-  profesion String
-  empresa String
-  pais String
-}
+ model Form{
+    id Int @id @default(autoincrement())
+    nombre String
+    apellido String
+    email String
+    profesion String
+    empresa String
+    pais String
+  }
