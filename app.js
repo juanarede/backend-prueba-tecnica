@@ -14,7 +14,13 @@ export const createApp = () =>{
     
     app.use(corsMiddleware);
 
+    app.get('/', (req, res) => {
+        res.status(200).send({message: 'server is online'})
+    })
+
     app.use('/mail', router)
+    
+    
     
 const PORT = process.env.PORT || 3000;
 app.listen(PORT,()=>{
