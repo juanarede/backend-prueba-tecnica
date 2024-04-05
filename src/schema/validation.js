@@ -7,8 +7,8 @@ const messageSchema = z.object({
     apellido: z.string({
         required_error: 'El apellido es requerido'
     }).max(20,{message:'El apellido no puede tener más de 20 caracteres'}),
-    mail: z.string({
-        required_error: 'El mail es requerido'
+    email: z.string({
+        required_error: 'El email es requerido'
     }).email({message:'El email tiene que ser valido'}),
     profesion: z.string({
         required_error: 'La profesión es requerida'

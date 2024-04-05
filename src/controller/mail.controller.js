@@ -22,6 +22,6 @@ export class MailController{
                 pais: pais,
             }
         })
-        res.status(StatusCodes.OK).json({ message:'mensaje enviado satisfactoriamente'})
+        res.status(StatusCodes.OK).json({ message:"mensaje enviado satisfactoriamente"})
     }
 }
